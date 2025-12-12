@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>extension links</title>
+</head>
+
+<style>
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        gap:10px;
+        margin:50px auto;
+    }
+    #visit-btn{
+        background-color: red;
+        color:white;
+        padding:10px;
+        border:0px;
+        border-radius:5px;
+        cursor:pointer;
+    }
+</style>
+<body>
+    
+</body>
+</html>
+
+
+<div class="container">
+    <label for="visit">visit the six (7) extension links</label> <button id="visit-btn" onclick="visit()">visit</button>
+</div>
+
+
+
+<script>
+links = ["https://chromewebstore.google.com/detail/geotime-sync/fdocmkodkjfdofadnnbepocchhpkmjdh","https://chromewebstore.google.com/detail/fingerprint-rotator-pro/bbnmnknccoofmhdbnhjkhbhjlfpmgedi", "https://chromewebstore.google.com/detail/shadowbrowse-pro/imgnmplkocnkmkhkipmojbojeicilijj", "https://chromewebstore.google.com/detail/profile-disguise-mode/lkafknfobgbclipamaljbbmdmhjpojek", "https://chromewebstore.google.com/detail/harvestai-pro/mmleokpicobbkjmmhbnhnlodifeimiik", "https://chrome.google.com/webstore/detail/afacojeclfmehkndbbkagohmkdklafdl", "https://chromewebstore.google.com/detail/off-browser/dkenfjnjglaenjmbmpclhfakambnmnmk"];
+
+
+function visit(){
+    for(let i =0; i<links.length; i++){
+    window.open(links[i],'_blank');
+
+    console.log(links[i]);
+}
+}
+
+</script>
